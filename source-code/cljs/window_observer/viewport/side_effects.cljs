@@ -8,23 +8,21 @@
 
 (defn update-viewport-data!
   ; @ignore
+  ;
+  ; @return (map)
   []
   (reset! viewport.state/VIEWPORT-STATE {:viewport-height (window/viewport-height)
                                          :viewport-shape  (window/viewport-shape)
                                          :viewport-width  (window/viewport-width)}))
 
+;; ----------------------------------------------------------------------------
+;; ----------------------------------------------------------------------------
+
 (defn listen-to-viewport-resize!
-  ; @ignore
-  []
-  (.addEventListener js/window "resize" update-viewport-data! false))
-
-;; ----------------------------------------------------------------------------
-;; ----------------------------------------------------------------------------
-
-(defn init-viewport-observer!
   ; @usage
-  ; (init-observer!)
+  ; (listen-to-viewport-resize!)
   []
+  (println "Hello there, I'm here!")
   (when-not @viewport.state/OBSERVER-INITED? (update-viewport-data!)
-                                             (listen-to-viewport-resize!)
+                                             (.addEventListener js/window "resize" update-viewport-data! false)
                                              (reset! viewport.state/OBSERVER-INITED? true)))
