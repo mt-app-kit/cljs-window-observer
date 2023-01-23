@@ -1,4 +1,4 @@
 
 {:paths ["source-code/cljs"]
  :deps  {bithandshake/cljs-window {:git/url "https://github.com/bithandshake/cljs-window"
-                                   :sha     "273759de474155b95d7e120611067b7135677a5f"}}}
+                                   :sha     "964ef8212307b18e7bc3c4ce737b5a959435599f"}}}
