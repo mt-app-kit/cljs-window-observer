@@ -1,5 +1,5 @@
 
-(ns window-observer.viewport.helpers
+(ns window-observer.viewport.env
     (:require [window-observer.viewport.state :as viewport.state]))
 
 ;; ----------------------------------------------------------------------------
