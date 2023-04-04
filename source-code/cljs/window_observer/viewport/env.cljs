@@ -7,13 +7,13 @@
 
 (defn get-viewport-height
   ; @warning
-  ; Before using, call the init-viewport-observer! function!
+  ; Before using this function first time call the listen-to-viewport-resize! function!
   ;
   ; @description
   ; Returns the actual height of the viewport.
   ;
-  ; Viewport dimensions read from the JS Window object and stored in a Reagent
-  ; atom to make Reagent components rerender when dimensions are changing.
+  ; Viewport dimensions are read from the JS Window object and stored within a Reagent
+  ; atom in order to make Reagent components rerender when a dimension changed.
   ;
   ; @usage
   ; (get-viewport-height)
@@ -24,13 +24,13 @@
 
 (defn get-viewport-width
   ; @warning
-  ; Before using, call the init-viewport-observer! function!
+  ; Before using this function first time call the listen-to-viewport-resize! function!
   ;
   ; @description
   ; Returns the actual width of the viewport.
   ;
-  ; Viewport dimensions read from the JS Window object and stored in a Reagent
-  ; atom to make Reagent components rerender when dimensions are changing.
+  ; Viewport dimensions are read from the JS Window object and stored within a Reagent
+  ; atom in order to make Reagent components rerender when a dimension changed.
   ;
   ; @usage
   ; (get-viewport-width)
@@ -41,13 +41,13 @@
 
 (defn get-viewport-shape
   ; @warning
-  ; Before using, call the init-viewport-observer! function!
+  ; Before using this function first time call the listen-to-viewport-resize! function!
   ;
   ; @description
   ; Returns the actual shape of the viewport.
   ;
-  ; Viewport dimensions read from the JS Window object and stored in a Reagent
-  ; atom to make Reagent components rerender when dimensions are changing.
+  ; Viewport dimensions are read from the JS Window object and stored within a Reagent
+  ; atom in order to make Reagent components rerender when a dimension changed.
   ;
   ; @usage
   ; (get-viewport-shape)
@@ -62,13 +62,13 @@
 
 (defn square-viewport?
   ; @warning
-  ; Before using, call the init-viewport-observer! function!
+  ; Before using this function first time call the listen-to-viewport-resize! function!
   ;
   ; @description
   ; Returns true if the actual width and height of the viewport are the exact same.
   ;
-  ; Viewport dimensions read from the JS Window object and stored in a Reagent
-  ; atom to make Reagent components rerender when dimensions are changing.
+  ; Viewport dimensions are read from the JS Window object and stored within a Reagent
+  ; atom in order to make Reagent components rerender when a dimension changed.
   ;
   ; @usage
   ; (square-viewport?)
@@ -79,13 +79,13 @@
 
 (defn landscape-viewport?
   ; @warning
-  ; Before using, call the init-viewport-observer! function!
+  ; Before using this function first time call the listen-to-viewport-resize! function!
   ;
   ; @description
-  ; Returns true if the actual width of the viewport is greater than the height.
+  ; Returns true if the actual width of the viewport is greater than its height.
   ;
-  ; Viewport dimensions read from the JS Window object and stored in a Reagent
-  ; atom to make Reagent components rerender when dimensions are changing.
+  ; Viewport dimensions are read from the JS Window object and stored within a Reagent
+  ; atom in order to make Reagent components rerender when a dimension changed.
   ;
   ; @usage
   ; (landscape-viewport?)
@@ -96,13 +96,13 @@
 
 (defn portrait-viewport?
   ; @warning
-  ; Before using, call the init-viewport-observer! function!
+  ; Before using this function first time call the listen-to-viewport-resize! function!
   ;
   ; @description
-  ; Returns true if the actual height of the viewport is greater than the width.
+  ; Returns true if the actual height of the viewport is greater than its width.
   ;
-  ; Viewport dimensions read from the JS Window object and stored in a Reagent
-  ; atom to make Reagent components rerender when dimensions are changing.
+  ; Viewport dimensions are read from the JS Window object and stored within a Reagent
+  ; atom in order to make Reagent components rerender when a dimension changed.
   ;
   ; @usage
   ; (portrait-viewport?)
@@ -116,14 +116,14 @@
 
 (defn viewport-height-max?
   ; @warning
-  ; Before using, call the init-viewport-observer! function!
+  ; Before using this function first time call the listen-to-viewport-resize! function!
   ;
   ; @description
   ; Returns true if the actual height of the viewport is smaller than or equal
   ; to the given value.
   ;
-  ; Viewport dimensions read from the JS Window object and stored in a Reagent
-  ; atom to make Reagent components rerender when dimensions are changing.
+  ; Viewport dimensions are read from the JS Window object and stored within a Reagent
+  ; atom in order to make Reagent components rerender when a dimension changed.
   ;
   ; @param (px) max-height
   ;
@@ -136,7 +136,7 @@
 
 (defn viewport-height-min?
   ; @warning
-  ; Before using, call the init-viewport-observer! function!
+  ; Before using this function first time call the listen-to-viewport-resize! function!
   ;
   ; @param (px) min-height
   ;
@@ -144,8 +144,8 @@
   ; Returns true if the actual height of the viewport is greater than or equal
   ; to the given value.
   ;
-  ; Viewport dimensions read from the JS Window object and stored in a Reagent
-  ; atom to make Reagent components rerender when dimensions are changing.
+  ; Viewport dimensions are read from the JS Window object and stored within a Reagent
+  ; atom in order to make Reagent components rerender when a dimension changed.
   ;
   ; @usage
   ; (viewport-height-min? 1024)
@@ -156,7 +156,7 @@
 
 (defn viewport-width-max?
   ; @warning
-  ; Before using, call the init-viewport-observer! function!
+  ; Before using this function first time call the listen-to-viewport-resize! function!
   ;
   ; @param (px) max-width
   ;
@@ -164,8 +164,8 @@
   ; Returns true if the actual width of the viewport is smaller than or equal
   ; to the given value.
   ;
-  ; Viewport dimensions read from the JS Window object and stored in a Reagent
-  ; atom to make Reagent components rerender when dimensions are changing.
+  ; Viewport dimensions are read from the JS Window object and stored within a Reagent
+  ; atom in order to make Reagent components rerender when a dimension changed.
   ;
   ; @usage
   ; (viewport-width-max? 1024)
@@ -176,7 +176,7 @@
 
 (defn viewport-width-min?
   ; @warning
-  ; Before using, call the init-viewport-observer! function!
+  ; Before using this function first time call the listen-to-viewport-resize! function!
   ;
   ; @param (px) min-width
   ;
@@ -184,8 +184,8 @@
   ; Returns true if the actual width of the viewport is greater than or equal
   ; to the given value.
   ;
-  ; Viewport dimensions read from the JS Window object and stored in a Reagent
-  ; atom to make Reagent components rerender when dimensions are changing.
+  ; Viewport dimensions are read from the JS Window object and stored within a Reagent
+  ; atom in order to make Reagent components rerender when a dimension changed.
   ;
   ; @usage
   ; (viewport-width-min? 1024)

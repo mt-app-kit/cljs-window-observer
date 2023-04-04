@@ -6,7 +6,7 @@
 The <strong>cljs-window-observer</strong> is a set of ClojureScript utility
 functions that get data from the JavaScript Window object such as viewport dimensions.
 Stores and reads data in/from Reagent atoms to make Reagent components
-rerendered when the related data changing.
+rerender if the stored data changes.
 
 ### deps.edn
 
