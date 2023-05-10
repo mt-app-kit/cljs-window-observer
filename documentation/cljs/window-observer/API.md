@@ -81,7 +81,7 @@ the return value from the atom and you don't have to call this function again.
 
 ```
 @warning
-Before using this function first time call the listen-to-viewport-resize! function!
+Before calling this function first time call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -129,7 +129,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before using this function first time call the listen-to-viewport-resize! function!
+Before calling this function first time call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -178,7 +178,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before using this function first time call the listen-to-viewport-resize! function!
+Before calling this function first time call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -226,7 +226,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before using this function first time call the listen-to-viewport-resize! function!
+Before calling this function first time call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -309,7 +309,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before using this function first time call the listen-to-viewport-resize! function!
+Before calling this function first time call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -357,7 +357,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before using this function first time call the listen-to-viewport-resize! function!
+Before calling this function first time call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -405,7 +405,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before using this function call the detect-touch! function!
+Before calling this function first time call the detect-touch! function once!
 ```
 
 ```
@@ -451,7 +451,7 @@ Returns true in case of the browser can use touch pointer devices.
 
 ```
 @warning
-Before using this function first time call the listen-to-viewport-resize! function!
+Before calling this function first time call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -504,7 +504,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before using this function first time call the listen-to-viewport-resize! function!
+Before calling this function first time call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -557,7 +557,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before using this function first time call the listen-to-viewport-resize! function!
+Before calling this function first time call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -610,7 +610,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before using this function first time call the listen-to-viewport-resize! function!
+Before calling this function first time call the listen-to-viewport-resize! function once!
 ```
 
 ```
