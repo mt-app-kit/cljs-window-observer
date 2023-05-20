@@ -7,7 +7,7 @@
 
 (defn get-viewport-height
   ; @warning
-  ; Before calling this function first time call the listen-to-viewport-resize! function once!
+  ; Before calling this function first time, call the listen-to-viewport-resize! function once!
   ;
   ; @description
   ; Returns the actual height of the viewport.
@@ -24,7 +24,7 @@
 
 (defn get-viewport-width
   ; @warning
-  ; Before calling this function first time call the listen-to-viewport-resize! function once!
+  ; Before calling this function first time, call the listen-to-viewport-resize! function once!
   ;
   ; @description
   ; Returns the actual width of the viewport.
@@ -41,7 +41,7 @@
 
 (defn get-viewport-shape
   ; @warning
-  ; Before calling this function first time call the listen-to-viewport-resize! function once!
+  ; Before calling this function first time, call the listen-to-viewport-resize! function once!
   ;
   ; @description
   ; Returns the actual shape of the viewport.
@@ -62,7 +62,7 @@
 
 (defn square-viewport?
   ; @warning
-  ; Before calling this function first time call the listen-to-viewport-resize! function once!
+  ; Before calling this function first time, call the listen-to-viewport-resize! function once!
   ;
   ; @description
   ; Returns true if the actual width and height of the viewport are the exact same.
@@ -79,7 +79,7 @@
 
 (defn landscape-viewport?
   ; @warning
-  ; Before calling this function first time call the listen-to-viewport-resize! function once!
+  ; Before calling this function first time, call the listen-to-viewport-resize! function once!
   ;
   ; @description
   ; Returns true if the actual width of the viewport is greater than its height.
@@ -96,7 +96,7 @@
 
 (defn portrait-viewport?
   ; @warning
-  ; Before calling this function first time call the listen-to-viewport-resize! function once!
+  ; Before calling this function first time, call the listen-to-viewport-resize! function once!
   ;
   ; @description
   ; Returns true if the actual height of the viewport is greater than its width.
@@ -116,7 +116,7 @@
 
 (defn viewport-height-max?
   ; @warning
-  ; Before calling this function first time call the listen-to-viewport-resize! function once!
+  ; Before calling this function first time, call the listen-to-viewport-resize! function once!
   ;
   ; @description
   ; Returns true if the actual height of the viewport is smaller than or equal
@@ -136,7 +136,7 @@
 
 (defn viewport-height-min?
   ; @warning
-  ; Before calling this function first time call the listen-to-viewport-resize! function once!
+  ; Before calling this function first time, call the listen-to-viewport-resize! function once!
   ;
   ; @param (px) min-height
   ;
@@ -156,7 +156,7 @@
 
 (defn viewport-width-max?
   ; @warning
-  ; Before calling this function first time call the listen-to-viewport-resize! function once!
+  ; Before calling this function first time, call the listen-to-viewport-resize! function once!
   ;
   ; @param (px) max-width
   ;
@@ -176,7 +176,7 @@
 
 (defn viewport-width-min?
   ; @warning
-  ; Before calling this function first time call the listen-to-viewport-resize! function once!
+  ; Before calling this function first time, call the listen-to-viewport-resize! function once!
   ;
   ; @param (px) min-width
   ;
@@ -193,3 +193,47 @@
   ; @return (boolean)
   [min-width]
   (<= min-width (:viewport-width @viewport.state/VIEWPORT-STATE)))
+
+(defn viewport-size-min?
+  ; @warning
+  ; Before calling this function first time, call the listen-to-viewport-resize! function once!
+  ;
+  ; @param (px) min-width
+  ; @param (px) min-height
+  ;
+  ; @description
+  ; Returns true if the actual width and height of the viewport is greater than
+  ; or equal to the given values.
+  ;
+  ; Viewport dimensions are read from the JS Window object and stored within a Reagent
+  ; atom in order to make Reagent components rerender when a dimension changed.
+  ;
+  ; @usage
+  ; (viewport-size-min? 1024 768)
+  ;
+  ; @return (boolean)
+  [min-width min-height]
+  (and (<= min-width  (:viewport-width  @viewport.state/VIEWPORT-STATE))
+       (<= min-height (:viewport-height @viewport.state/VIEWPORT-STATE))))
+
+(defn viewport-size-max?
+  ; @warning
+  ; Before calling this function first time, call the listen-to-viewport-resize! function once!
+  ;
+  ; @param (px) max-width
+  ; @param (px) max-height
+  ;
+  ; @description
+  ; Returns true if the actual width and height of the viewport is smaller than
+  ; or equal to the given values.
+  ;
+  ; Viewport dimensions are read from the JS Window object and stored within a Reagent
+  ; atom in order to make Reagent components rerender when a dimension changed.
+  ;
+  ; @usage
+  ; (viewport-size-max? 1024 768)
+  ;
+  ; @return (boolean)
+  [max-width max-height]
+  (and (>= max-width  (:viewport-width  @viewport.state/VIEWPORT-STATE))
+       (>= max-height (:viewport-height @viewport.state/VIEWPORT-STATE))))

@@ -25,6 +25,8 @@
 (def viewport-height-min? viewport.env/viewport-height-min?)
 (def viewport-width-max?  viewport.env/viewport-width-max?)
 (def viewport-width-min?  viewport.env/viewport-width-min?)
+(def viewport-size-min?   viewport.env/viewport-size-min?)
+(def viewport-size-max?   viewport.env/viewport-size-max?)
 
 ; window-observer.viewport.side-effects
 (def listen-to-viewport-resize! viewport.side-effects/listen-to-viewport-resize!)
