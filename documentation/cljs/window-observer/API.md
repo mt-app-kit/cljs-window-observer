@@ -27,6 +27,10 @@
 
 - [viewport-height-min?](#viewport-height-min)
 
+- [viewport-size-max?](#viewport-size-max)
+
+- [viewport-size-min?](#viewport-size-min)
+
 - [viewport-width-max?](#viewport-width-max)
 
 - [viewport-width-min?](#viewport-width-min)
@@ -81,7 +85,7 @@ the return value from the atom and you don't have to call this function again.
 
 ```
 @warning
-Before calling this function first time call the listen-to-viewport-resize! function once!
+Before calling this function first time, call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -129,7 +133,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before calling this function first time call the listen-to-viewport-resize! function once!
+Before calling this function first time, call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -178,7 +182,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before calling this function first time call the listen-to-viewport-resize! function once!
+Before calling this function first time, call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -226,7 +230,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before calling this function first time call the listen-to-viewport-resize! function once!
+Before calling this function first time, call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -309,7 +313,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before calling this function first time call the listen-to-viewport-resize! function once!
+Before calling this function first time, call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -357,7 +361,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before calling this function first time call the listen-to-viewport-resize! function once!
+Before calling this function first time, call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -405,7 +409,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before calling this function first time call the detect-touch! function once!
+Before calling this function first time, call the detect-touch! function once!
 ```
 
 ```
@@ -451,7 +455,7 @@ Returns true in case of the browser can use touch pointer devices.
 
 ```
 @warning
-Before calling this function first time call the listen-to-viewport-resize! function once!
+Before calling this function first time, call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -504,7 +508,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before calling this function first time call the listen-to-viewport-resize! function once!
+Before calling this function first time, call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -553,11 +557,121 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ---
 
+### viewport-size-max?
+
+```
+@warning
+Before calling this function first time, call the listen-to-viewport-resize! function once!
+```
+
+```
+@description
+Returns true if the actual width and height of the viewport is smaller than
+or equal to the given values.
+Viewport dimensions are read from the JS Window object and stored within a Reagent
+atom in order to make Reagent components rerender when a dimension changed.
+```
+
+```
+@param (px) max-width
+@param (px) max-height
+```
+
+```
+@usage
+(viewport-size-max? 1024 768)
+```
+
+```
+@return (boolean)
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn viewport-size-max?
+  [max-width max-height]
+  (and (>= max-width  (:viewport-width  @viewport.state/VIEWPORT-STATE))
+       (>= max-height (:viewport-height @viewport.state/VIEWPORT-STATE))))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [window-observer.api :refer [viewport-size-max?]]))
+
+(window-observer.api/viewport-size-max? ...)
+(viewport-size-max?                     ...)
+```
+
+</details>
+
+---
+
+### viewport-size-min?
+
+```
+@warning
+Before calling this function first time, call the listen-to-viewport-resize! function once!
+```
+
+```
+@description
+Returns true if the actual width and height of the viewport is greater than
+or equal to the given values.
+Viewport dimensions are read from the JS Window object and stored within a Reagent
+atom in order to make Reagent components rerender when a dimension changed.
+```
+
+```
+@param (px) min-width
+@param (px) min-height
+```
+
+```
+@usage
+(viewport-size-min? 1024 768)
+```
+
+```
+@return (boolean)
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn viewport-size-min?
+  [min-width min-height]
+  (and (<= min-width  (:viewport-width  @viewport.state/VIEWPORT-STATE))
+       (<= min-height (:viewport-height @viewport.state/VIEWPORT-STATE))))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [window-observer.api :refer [viewport-size-min?]]))
+
+(window-observer.api/viewport-size-min? ...)
+(viewport-size-min?                     ...)
+```
+
+</details>
+
+---
+
 ### viewport-width-max?
 
 ```
 @warning
-Before calling this function first time call the listen-to-viewport-resize! function once!
+Before calling this function first time, call the listen-to-viewport-resize! function once!
 ```
 
 ```
@@ -610,7 +724,7 @@ atom in order to make Reagent components rerender when a dimension changed.
 
 ```
 @warning
-Before calling this function first time call the listen-to-viewport-resize! function once!
+Before calling this function first time, call the listen-to-viewport-resize! function once!
 ```
 
 ```
