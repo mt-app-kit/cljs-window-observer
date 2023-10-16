@@ -3,4 +3,4 @@
  :deps  {bithandshake/cljs-window {:git/url "https://github.com/bithandshake/cljs-window"
                                    :sha     "280baa7e4fcaf2a2532798ebeaf150a79667e995"}
          bithandshake/reagent-api {:git/url "https://github.com/bithandshake/reagent-api"
-                                   :sha     "0aaf6537165b77d21a2f87dfa359d26295227523"}}}
+                                   :sha     "e3608e8faf37c158ad54bf6e312a81eccee066fc"}}}
