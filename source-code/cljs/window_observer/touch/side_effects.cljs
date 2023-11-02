@@ -10,10 +10,10 @@
   ; @description
   ; Detects whether the browser can use touch pointer devices.
   ;
-  ; Returns true if the Touch events API detected, and stores the return
+  ; Returns TRUE if the Touch events API is detected, and stores the return
   ; value within a Reagent atom.
   ;
-  ; After this function first called, the touch-detected? function can read
+  ; After this function first called, the 'touch-detected?' function can read
   ; the return value from the atom and you don't have to call this function again.
   ;
   ; @usage

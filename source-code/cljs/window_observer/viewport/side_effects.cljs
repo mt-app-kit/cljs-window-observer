@@ -22,7 +22,6 @@
   ; @usage
   ; (listen-to-viewport-resize!)
   []
-  (println "Hello there, I'm here!")
   (when-not @viewport.state/OBSERVER-INITED? (update-viewport-data!)
                                              (.addEventListener js/window "resize" update-viewport-data! false)
                                              (reset! viewport.state/OBSERVER-INITED? true)))

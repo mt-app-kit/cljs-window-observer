@@ -7,10 +7,10 @@
 
 (defn touch-detected?
   ; @warning
-  ; Before calling this function first time, call the detect-touch! function once!
+  ; Before first using this function, call the 'detect-touch!' function at least once!
   ;
   ; @description
-  ; Returns true in case of the browser can use touch pointer devices.
+  ; Returns TRUE if the browser can use touch pointer devices.
   ;
   ; @usage
   ; (touch-detected?)
