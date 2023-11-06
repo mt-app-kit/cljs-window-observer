@@ -1,5 +1,9 @@
 
-# window-observer.api ClojureScript namespace
+### window-observer.api
+
+Functional documentation of the window-observer.api ClojureScript namespace
+
+---
 
 ##### [README](../../../README.md) > [DOCUMENTATION](../../COVER.md) > window-observer.api
 
@@ -34,6 +38,8 @@
 - [viewport-width-max?](#viewport-width-max)
 
 - [viewport-width-min?](#viewport-width-min)
+
+---
 
 ### detect-touch!
 
@@ -772,5 +778,5 @@ atom in order to make Reagent components rerender when a dimension changes.
 
 ---
 
-This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.
+<sub>This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.</sub>
 
