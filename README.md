@@ -12,7 +12,7 @@ rerender when the related data changes.
 
 ```
 {:deps {bithandshake/cljs-window-observer {:git/url "https://github.com/bithandshake/cljs-window-observer"
-                                           :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}
+                                           :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}}
 ```
 
 ### Current version
