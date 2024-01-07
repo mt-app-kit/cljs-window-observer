@@ -5,14 +5,23 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; @ignore
-;
-; @description
-; Storing the viewport dimensions in a Reagent atom makes Reagent components
-; reacting to viewport resize events.
+; @important
+; Before dereferencing this atom for the first time, call the 'detect-viewport-dimensions!'
+; or the 'listen-to-viewport-resize!' function once!
 ;
 ; @atom (map)
-(def VIEWPORT-STATE (ratom {}))
+; {:viewport-height (px)
+;  :viewport-shape (keyword)
+;   :landscape, :portrait, :square
+;  :viewport-width (px)}
+;
+; @usage
+; (deref VIEWPORT-DIMENSIONS)
+; =>
+; {:viewport-height 960
+;  :viewport-shape  :landscape
+;  :viewport-wide   1980}
+(def VIEWPORT-DIMENSIONS (ratom nil))
 
 ; @ignore
 ;

@@ -1,11 +1,16 @@
 
-(ns window-observer.touch.state
-    (:require [reagent.core :refer [atom] :rename {atom ratom}]))
+(ns window-observer.touch.state)
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; @ignore
+; @important
+; Before dereferencing this atom for the first time, call the 'detect-touch!' function once!
 ;
 ; @atom (boolean)
-(def TOUCH-EVENTS-API-DETECTED? (ratom false))
+;
+; @usage
+; (deref TOUCH-EVENTS-API-DETECTED?)
+; =>
+; true
+(def TOUCH-EVENTS-API-DETECTED? (atom nil))
