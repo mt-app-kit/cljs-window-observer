@@ -2,10 +2,10 @@
 (ns window-observer.api
     (:require [window-observer.touch.env             :as touch.env]
               [window-observer.touch.side-effects    :as touch.side-effects]
+              [window-observer.touch.state           :as touch.state]
               [window-observer.viewport.env          :as viewport.env]
               [window-observer.viewport.side-effects :as viewport.side-effects]
-              [window-observer.touch.state :as touch.state]
-              [window-observer.viewport.state :as viewport.state]))
+              [window-observer.viewport.state        :as viewport.state]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------

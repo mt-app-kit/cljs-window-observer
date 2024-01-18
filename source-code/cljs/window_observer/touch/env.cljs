@@ -1,7 +1,7 @@
 
 (ns window-observer.touch.env
-    (:require [window-observer.touch.state :as touch.state]
-              [window-observer.touch.side-effects :as touch.side-effects]))
+    (:require [window-observer.touch.side-effects :as touch.side-effects]
+              [window-observer.touch.state        :as touch.state]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------

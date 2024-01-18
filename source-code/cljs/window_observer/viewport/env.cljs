@@ -1,7 +1,7 @@
 
 (ns window-observer.viewport.env
-    (:require [window-observer.viewport.state :as viewport.state]
-              [window-observer.viewport.side-effects :as viewport.side-effects]))
+    (:require [window-observer.viewport.side-effects :as viewport.side-effects]
+              [window-observer.viewport.state        :as viewport.state]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
