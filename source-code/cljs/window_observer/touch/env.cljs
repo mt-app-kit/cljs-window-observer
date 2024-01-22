@@ -17,7 +17,7 @@
   ;
   ; @return (boolean)
   []
-  ; Use 'if-let' instead of using 'or' because the 'touch-events-api-detected?' can be FALSE!
-  (if-let [touch-events-api-detected? @touch.state/TOUCH-EVENTS-API-DETECTED?]
-          (-> touch-events-api-detected?)
-          (touch.side-effects/detect-touch!)))
+  ; Use 'if-some' instead of using 'or' because the 'touch-events-api-detected?' can be FALSE!
+  (if-some [touch-events-api-detected? @touch.state/TOUCH-EVENTS-API-DETECTED?]
+           (-> touch-events-api-detected?)
+           (touch.side-effects/detect-touch!)))
