@@ -9,7 +9,7 @@
 (defn get-viewport-dimensions
   ; @description
   ; - Returns the actual dimensions of the viewport.
-  ;   The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
+  ; - The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
   ; - In case the 'VIEWPORT-DIMENSIONS' atom is empty, automatically calls the 'listen-to-viewport-resize!' function.
   ;
   ; @usage
@@ -38,7 +38,7 @@
 (defn get-viewport-height
   ; @description
   ; - Returns the actual height of the viewport.
-  ;   The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
+  ; - The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
   ; - In case the 'VIEWPORT-DIMENSIONS' atom is empty, automatically calls the 'listen-to-viewport-resize!' function.
   ;
   ; @usage
@@ -54,7 +54,7 @@
 (defn get-viewport-width
   ; @description
   ; - Returns the actual width of the viewport.
-  ;   The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
+  ; - The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
   ; - In case the 'VIEWPORT-DIMENSIONS' atom is empty, automatically calls the 'listen-to-viewport-resize!' function.
   ;
   ; @usage
@@ -70,7 +70,7 @@
 (defn get-viewport-shape
   ; @description
   ; - Returns the actual shape of the viewport.
-  ;   The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
+  ; - The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
   ; - In case the 'VIEWPORT-DIMENSIONS' atom is empty, automatically calls the 'listen-to-viewport-resize!' function.
   ;
   ; @usage
@@ -90,7 +90,7 @@
 (defn square-viewport?
   ; @description
   ; - Returns TRUE if the actual width and height of the viewport are the same.
-  ;   The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
+  ; - The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
   ; - In case the 'VIEWPORT-DIMENSIONS' atom is empty, automatically calls the 'listen-to-viewport-resize!' function.
   ;
   ; @usage
@@ -106,7 +106,7 @@
 (defn landscape-viewport?
   ; @description
   ; - Returns TRUE if the actual width of the viewport is greater than the actual viewport height.
-  ;   The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
+  ; - The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
   ; - In case the 'VIEWPORT-DIMENSIONS' atom is empty, automatically calls the 'listen-to-viewport-resize!' function.
   ;
   ; @usage
@@ -122,7 +122,7 @@
 (defn portrait-viewport?
   ; @description
   ; - Returns TRUE if the actual height of the viewport is greater than the actual viewport width.
-  ;   The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
+  ; - The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
   ; - In case the 'VIEWPORT-DIMENSIONS' atom is empty, automatically calls the 'listen-to-viewport-resize!' function.
   ;
   ; @usage
@@ -141,7 +141,7 @@
 (defn viewport-height-max?
   ; @description
   ; - Returns TRUE if the actual height of the viewport is smaller than or equal to the given value.
-  ;   The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
+  ; - The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
   ; - In case the 'VIEWPORT-DIMENSIONS' atom is empty, automatically calls the 'listen-to-viewport-resize!' function.
   ;
   ; @param (px) max-height
@@ -159,7 +159,7 @@
 (defn viewport-height-min?
   ; @description
   ; - Returns TRUE if the actual height of the viewport is greater than or equal to the given value.
-  ;   The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
+  ; - The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
   ; - In case the 'VIEWPORT-DIMENSIONS' atom is empty, automatically calls the 'listen-to-viewport-resize!' function.
   ;
   ; @param (px) min-height
@@ -177,7 +177,7 @@
 (defn viewport-width-max?
   ; @description
   ; - Returns TRUE if the actual width of the viewport is smaller than or equal to the given value.
-  ;   The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
+  ; - The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
   ; - In case the 'VIEWPORT-DIMENSIONS' atom is empty, automatically calls the 'listen-to-viewport-resize!' function.
   ;
   ; @param (px) max-width
@@ -195,7 +195,7 @@
 (defn viewport-width-min?
   ; @description
   ; - Returns TRUE if the actual width of the viewport is greater than or equal to the given value.
-  ;   The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
+  ; - The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
   ; - In case the 'VIEWPORT-DIMENSIONS' atom is empty, automatically calls the 'listen-to-viewport-resize!' function.
   ;
   ; @param (px) min-width
@@ -213,7 +213,7 @@
 (defn viewport-size-min?
   ; @description
   ; - Returns TRUE if the actual width and height of the viewport is greater than or equal to the given values.
-  ;   The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
+  ; - The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
   ; - In case the 'VIEWPORT-DIMENSIONS' atom is empty, automatically calls the 'listen-to-viewport-resize!' function.
   ;
   ; @param (px) min-width
@@ -233,7 +233,7 @@
 (defn viewport-size-max?
   ; @description
   ; - Returns TRUE if the actual width and height of the viewport is smaller than or equal to the given values.
-  ;   The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
+  ; - The output is dereferenced from the 'VIEWPORT-DIMENSIONS' atom.
   ; - In case the 'VIEWPORT-DIMENSIONS' atom is empty, automatically calls the 'listen-to-viewport-resize!' function.
   ;
   ; @param (px) max-width

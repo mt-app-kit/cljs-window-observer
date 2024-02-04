@@ -35,7 +35,7 @@
 (defn listen-to-viewport-resize!
   ; @description
   ; - Detects the dimensions of the viewport.
-  ; - Sets a viewport resize listener for reacting on further dimension changes.
+  ; - Sets a viewport resize listener for reacting on dimension changes.
   ; - Stores the detected viewport dimensions in the 'VIEWPORT-DIMENSIONS' atom.
   ; - Returns the detected viewport dimensions.
   ;
