@@ -9,7 +9,8 @@
 (defn detect-viewport-dimensions!
   ; @description
   ; - Detects the dimensions of the viewport.
-  ; - Returns the detected viewport dimensions, and stores the return value.
+  ; - Stores the detected viewport dimensions in the 'VIEWPORT-DIMENSIONS' atom.
+  ; - Returns the detected viewport dimensions.
   ;
   ; @usage
   ; (detect-viewport-dimensions!)
@@ -33,8 +34,10 @@
 
 (defn listen-to-viewport-resize!
   ; @description
-  ; - Detects the dimensions of the viewport and sets a viewport resize listener for detecting further changes.
-  ; - Returns the detected viewport dimensions, and stores the return value.
+  ; - Detects the dimensions of the viewport.
+  ; - Sets a viewport resize listener for reacting on further dimension changes.
+  ; - Stores the detected viewport dimensions in the 'VIEWPORT-DIMENSIONS' atom.
+  ; - Returns the detected viewport dimensions.
   ;
   ; @usage
   ; (listen-to-viewport-resize!)

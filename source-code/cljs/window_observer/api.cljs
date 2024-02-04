@@ -11,10 +11,10 @@
 ;; ----------------------------------------------------------------------------
 
 ; @redirect (window-observer.touch.env/*)
-(def touch-detected? touch.env/touch-detected?)
+(def touch-events-api-detected? touch.env/touch-events-api-detected?)
 
 ; @redirect (window-observer.touch.side-effects/*)
-(def detect-touch! touch.side-effects/detect-touch!)
+(def detect-touch-events-api! touch.side-effects/detect-touch-events-api!)
 
 ; @redirect (window-observer.touch.state/*)
 (def TOUCH-EVENTS-API-DETECTED? touch.state/TOUCH-EVENTS-API-DETECTED?)

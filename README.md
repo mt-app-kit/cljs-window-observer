@@ -4,23 +4,26 @@
 ### Overview
 
 The <strong>cljs-window-observer</strong> is a set of JS/Window object observer functions for Clojure projects.
-I gets data from the JS/Window object such as viewport dimensions and stores/reads data in/from Reagent atoms to make
-Reagent components rerender when the related data changes.
+
+### Description
+
+It gets data from the JS Window object (such as viewport dimensions) and stores the data in Reagent atoms
+to make Reagent components rerender when the related data changes.
 
 ### deps.edn
 
 ```
-{:deps {bithandshake/cljs-window-observer {:git/url "https://github.com/bithandshake/cljs-window-observer"
-                                           :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}}
+{:deps {mt-app-kit/cljs-window-observer {:git/url "https://github.com/mt-app-kit/cljs-window-observer"
+                                         :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}}
 ```
 
 ### Current version
 
-Check out the latest commit on the [release branch](https://github.com/bithandshake/cljs-window-observer/tree/release).
+Check out the latest commit on the [release branch](https://github.com/mt-app-kit/cljs-window-observer/tree/release).
 
 ### Documentation
 
-The <strong>cljs-window-observer</strong> functional documentation is [available here](https://bithandshake.github.io/cljs-window-observer).
+The <strong>cljs-window-observer</strong> functional documentation is [available here](https://mt-app-kit.github.io/cljs-window-observer).
 
 ### Changelog
 

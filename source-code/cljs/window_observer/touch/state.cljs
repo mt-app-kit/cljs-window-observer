@@ -4,8 +4,9 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; @important
-; Before dereferencing this atom for the first time, call the 'detect-touch!' function once!
+; @note
+; Before dereferencing this atom for the first time, call the 'detect-touch-events-api!'
+; or the 'touch-events-api-detected?' function!
 ;
 ; @atom (boolean)
 ;

@@ -6,17 +6,18 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-(defn detect-touch!
+(defn detect-touch-events-api!
   ; @description
-  ; - Detects whether the browser can use touch pointer devices.
-  ; - Returns TRUE if the Touch events API is detected, and stores the return value.
+  ; - Detects whether the Touch events API is available.
+  ; - Stores the detected value in the 'TOUCH-EVENTS-API-DETECTED?' atom.
+  ; - Returns the detected value.
   ;
   ; @usage
-  ; (detect-touch!)
+  ; (detect-touch-events-api!)
   ; =>
   ; true
   ;
   ; @return (boolean)
   []
-  (let [% (window/touch-events-api-detected?)]
+  (let [% (window/touch-events-api-available?)]
        (reset! touch.state/TOUCH-EVENTS-API-DETECTED? %)))

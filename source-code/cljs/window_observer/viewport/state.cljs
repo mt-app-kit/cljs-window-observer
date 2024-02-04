@@ -5,9 +5,9 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; @important
+; @note
 ; Before dereferencing this atom for the first time, call the 'detect-viewport-dimensions!'
-; or the 'listen-to-viewport-resize!' function once!
+; or the 'listen-to-viewport-resize!' function!
 ;
 ; @atom (map)
 ; {:viewport-height (px)
@@ -25,9 +25,9 @@
 
 ; @ignore
 ;
-; @description
-; After the viewport resize observer is inited and a resize event is set on the
-; JS Window object, the 'listen-to-viewport-resize!' function no longer operates.
+; @note
+; If the viewport resize observer is inited and a resize event is set on the
+; JS Window object, the 'listen-to-viewport-resize!' function doesn't operate.
 ;
 ; @atom (boolean)
 (def OBSERVER-INITED? (atom false))
