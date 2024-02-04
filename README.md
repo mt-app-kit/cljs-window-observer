@@ -3,7 +3,7 @@
 
 ### Overview
 
-The <strong>cljs-window-observer</strong> is a set of JS/Window object observer functions for Clojure projects.
+The <strong>cljs-window-observer</strong> is a set of JS Window object observer functions for Clojure projects.
 
 ### Description
 
