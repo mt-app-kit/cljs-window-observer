@@ -1,6 +1,6 @@
 
 {:paths ["source-code/cljs"]
  :deps  {bithandshake/cljs-window  {:git/url "https://github.com/bithandshake/cljs-window"
-                                    :sha     "917f6bf8c22981d03e96896f20d85524ed6e8e7c"}
+                                    :sha     "cc8e1dd28e8c2c28f34a0d26f985101e3d84c3e5"}
          org.clojure/clojurescript {:mvn/version "1.10.891"}
          reagent/reagent           {:mvn/version "1.2.0"}}}
