@@ -1,6 +1,6 @@
 
 (ns window-observer.viewport.state
-    (:require [reagent.core :refer [atom] :rename {atom ratom}]))
+    (:require [reagent.core :as reagent]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
@@ -24,7 +24,7 @@
 ; {:viewport-height 960
 ;  :viewport-shape  :landscape
 ;  :viewport-wide   1980}
-(def VIEWPORT-DIMENSIONS (ratom nil))
+(def VIEWPORT-DIMENSIONS (reagent/atom nil))
 
 ; @ignore
 ;
