@@ -5,9 +5,12 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
+; @description
+; Stored viewport dimensions.
+; Updated automatically in case the 'listen-to-viewport-resize!' function is called.
+;
 ; @note
-; Before dereferencing this atom for the first time, call the 'detect-viewport-dimensions!'
-; or the 'listen-to-viewport-resize!' function!
+; Before dereferencing this atom for the first time, call the 'detect-viewport-dimensions!' or the 'listen-to-viewport-resize!' function!
 ;
 ; @atom (map)
 ; {:viewport-height (px)
