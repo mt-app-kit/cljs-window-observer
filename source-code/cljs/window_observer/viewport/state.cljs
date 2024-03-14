@@ -30,7 +30,7 @@
 ;
 ; @note
 ; If the viewport resize observer is inited and a resize event is set on the
-; JS Window object, the 'listen-to-viewport-resize!' function doesn't operate.
+; JS Window object, the 'listen-to-viewport-resize!' function does not operate.
 ;
 ; @atom (boolean)
 (def OBSERVER-INITED? (atom false))
