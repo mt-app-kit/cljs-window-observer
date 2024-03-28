@@ -1,7 +1,7 @@
 
 (ns window-observer.viewport.side-effects
     (:require [window-observer.viewport.state :as viewport.state]
-              [window.api                     :as window]))
+              [window-a.api                     :as window]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------

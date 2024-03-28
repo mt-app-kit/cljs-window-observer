@@ -1,7 +1,7 @@
 
 (ns window-observer.touch.side-effects
     (:require [window-observer.touch.state :as touch.state]
-              [window.api                  :as window]))
+              [window-a.api                  :as window]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
