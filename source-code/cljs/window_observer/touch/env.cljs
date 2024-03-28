@@ -10,7 +10,7 @@
   ; @description
   ; - Returns the dereferenced output of the 'TOUCH-EVENTS-API-DETECTED?' atom.
   ; - In case the 'TOUCH-EVENTS-API-DETECTED?' atom is empty, automatically calls the 'detect-touch-events-api!' function.
-  ;
+  ; 
   ; @usage
   ; (touch-events-api-detected?)
   ; =>
